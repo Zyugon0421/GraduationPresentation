@@ -117,8 +117,7 @@ void CPuzzle::Update(void)
 		if (pInputController->GetJoypadUse(0))
 		{// コントローラーが生成されているとき
 		 //ゲームの遷移
-			if (pInputController->GetControllerTrigger(0, JOYPADKEY_A) ||			// ゲームパッドのAボダンが押されたとき
-				pInputController->GetControllerTrigger(0, JOYPADKEY_START))			// ゲームパッドのSTARTボタンが押されたとき
+			if (pInputController->GetControllerTrigger(0, JOYPADKEY_START))			// ゲームパッドのSTARTボタンが押されたとき
 			{
 				if (pNetwork != NULL)
 				{
